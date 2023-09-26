@@ -39,3 +39,15 @@ c=len(b'\u4e2d\u6587')
 print(c)
 d=len('中文'.encode('utf-8'))
 print(d)
+
+
+### 高级特性 切片
+# 字符串'xxx'也可以看成是一种list，每个元素就是一个字符。因此，字符串也可以用切片操作，只是操作结果仍是字符串
+a='ABCDEFGJKLHMN'
+print(a[:5])
+print(a[-7:-2:2])
+
+### 高级特性 迭代
+for c in a:
+    print(c)
+    pass
