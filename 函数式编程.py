@@ -54,3 +54,17 @@ print(sorted(L,key=abs))
 ## 按绝对值排序，反转顺序
 print(sorted(L,key=abs,reverse=True))
 # [99, -88, 67, 10, -5]
+
+### 返回函数
+def lazy_sum():
+    def sum(*args):
+        return reduce(lambda x,y:x+y,args)
+    return sum
+L=[1,2,3,4,5]
+fn_sum=lazy_sum()
+print(fn_sum(L))
+
+### 匿名函数 lambda
+# 关键字lambda表示匿名函数，冒号前面的x表示函数参数。
+# 匿名函数有个限制，就是只能有一个表达式，不用写return，返回值就是该表达式的结果
+f=lambda x:x*x
