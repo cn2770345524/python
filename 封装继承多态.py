@@ -35,6 +35,7 @@ class FlyInterface(object):
         '''
         pass
 
+
 class RunInterface(object):
 
     def run(self):
@@ -44,5 +45,6 @@ class RunInterface(object):
         '''
         pass
 
-class Test(FlyInterface,RunInterface):
+
+class Test(FlyInterface, RunInterface):
     pass
